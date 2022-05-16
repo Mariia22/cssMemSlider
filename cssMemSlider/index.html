@@ -15,7 +15,10 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <header>
+    <h1>CSS Mem Slider</h1>
+  </header>
+  <main class="wrapper">
     <input type="radio" name="slideRadio" id="slide1" checked>
     <input type="radio" name="slideRadio" id="slide2">
     <input type="radio" name="slideRadio" id="slide3">
@@ -28,23 +31,24 @@
       <div class="slider__item slide4"></div>
       <div class="slider__item slide5"></div>
     </div>
-    <div class="controls">
-      <div class="text">
-        <div class="text__item text__slide1">Мои мысли, когда читаешь learn.js...</div>
-        <div class="text__item text__slide2">Аминь!!!</div>
+    <div class="text">
+      <div class="text__wrapper">
+        <div class="text__item text__slide1">Аминь!!!</div>
+        <div class="text__item text__slide2">Мои мысли, когда читаешь learn.js...</div>
         <div class="text__item text__slide3">Джаваскрипт за 300</div>
         <div class="text__item text__slide4">Деббагинг js</div>
         <div class="text__item text__slide5">А вы что думаете про классы в js?</div>
       </div>
-      <div class="switch">
-        <label for="slide1"></label>
-        <label for="slide2"></label>
-        <label for="slide3"></label>
-        <label for="slide4"></label>
-        <label for="slide5"></label>
-      </div>
     </div>
-  </div>
+    <div class="switch">
+      <label for="slide1" id="btn1" class="switch__item"><span></span></label>
+      <label for="slide2" id="btn2" class="switch__item"><span></span></label>
+      <label for="slide3" id="btn3" class="switch__item"><span></span></label>
+      <label for="slide4" id="btn4" class="switch__item"><span></span></label>
+      <label for="slide5" id="btn5" class="switch__item"><span></span></label>
+    </div>
+  </main>
+  <footer>© 2022 Mariia Ushakova for RSS School</footer>
 </body>
 
 </html>
