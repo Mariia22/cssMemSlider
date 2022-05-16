@@ -84,8 +84,13 @@ h1 {
   -o-transition: background ease-in-out .5s;
 }
 
-.switch__item>span:hover {
-  background: #FFFFFF;
+.switch__item:hover>span {
+  background: var(--color);
+}
+
+.switch__item:active>span {
+  background-color: var(--background-color);
+  border: 0.1rem solid var(--color);
 }
 
 #slide1:checked~.switch>#btn1>span,
@@ -94,7 +99,7 @@ h1 {
 #slide4:checked~.switch>#btn4>span,
 #slide5:checked~.switch>#btn5>span {
   background-color: var(--background-color);
-  border: 1px solid var(--label);
+  border: 0.1rem solid var(--label);
 }
 
 .slider {
