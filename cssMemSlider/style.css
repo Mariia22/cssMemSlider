@@ -1,5 +1,4 @@
 :root {
-  --padding: 48px;
   --font-size: 10px;
   --background-color: #25282A;
   --color: #FFFFFF;
@@ -36,7 +35,7 @@ body {
 }
 
 h1 {
-  margin: 30px 0 0 0;
+  margin: 3rem 0 0 0;
   font-size: 2rem;
 }
 
@@ -220,35 +219,38 @@ footer {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 1140px) {
+  .wrapper {
+    max-width: 70vw;
+  }
+}
+
 
 @media (max-width: 768px) {
-  h1 {
-    margin-top: 10px;
-  }
-
   .wrapper {
     grid-template-areas: "slider"
       "switch"
       "text";
     grid-template-columns: 100%;
     grid-template-rows: 70% 10% 20%;
-    max-width: 90vw;
+    max-width: 70vw;
   }
 
   .switch {
     justify-self: center;
   }
 
-  .text {
-    justify-self: center;
-  }
-
-  .text__item {
-    text-align: center;
-  }
-
   .slider__item {
     height: 20rem;
   }
 
+  .text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    max-width: 90vw;
+  }
 }
