@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-width: 320px;
+  min-width: 32rem;
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
@@ -87,11 +87,6 @@ h1 {
   background: var(--color);
 }
 
-.switch__item:active>span {
-  background-color: var(--background-color);
-  border: 0.1rem solid var(--color);
-}
-
 #slide1:checked~.switch>#btn1>span,
 #slide2:checked~.switch>#btn2>span,
 #slide3:checked~.switch>#btn3>span,
@@ -99,6 +94,16 @@ h1 {
 #slide5:checked~.switch>#btn5>span {
   background-color: var(--background-color);
   border: 0.1rem solid var(--label);
+}
+
+.switch__item:active>span,
+#slide1:checked~.switch>#btn1>span:active,
+#slide2:checked~.switch>#btn2>span:active,
+#slide3:checked~.switch>#btn3>span:active,
+#slide4:checked~.switch>#btn4>span:active,
+#slide5:checked~.switch>#btn5>span:active {
+  background-color: var(--background-color);
+  border: 0.1rem solid var(--color);
 }
 
 .slider {
