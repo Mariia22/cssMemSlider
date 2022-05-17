@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>MemSlider</title>
+</head>
+
+<body>
+  <header>
+    <h1>CSS Mem Slider</h1>
+  </header>
+  <main class="wrapper">
+    <input type="radio" name="slideRadio" id="slide1" checked>
+    <input type="radio" name="slideRadio" id="slide2">
+    <input type="radio" name="slideRadio" id="slide3">
+    <input type="radio" name="slideRadio" id="slide4">
+    <input type="radio" name="slideRadio" id="slide5">
+    <div class="slider">
+      <div class="slider__item slide1"></div>
+      <div class="slider__item slide2"></div>
+      <div class="slider__item slide3"></div>
+      <div class="slider__item slide4"></div>
+      <div class="slider__item slide5"></div>
+    </div>
+    <div class="text">
+      <div class="text__wrapper">
+        <div class="text__item text__slide1">Аминь!!!</div>
+        <div class="text__item text__slide2">Мои мысли, когда читаешь learn.js...</div>
+        <div class="text__item text__slide3">Джаваскрипт за 300</div>
+        <div class="text__item text__slide4">Деббагинг js</div>
+        <div class="text__item text__slide5">А вы что думаете про классы в js?</div>
+      </div>
+    </div>
+    <div class="switch">
+      <label for="slide1" id="btn1" class="switch__item"><span></span></label>
+      <label for="slide2" id="btn2" class="switch__item"><span></span></label>
+      <label for="slide3" id="btn3" class="switch__item"><span></span></label>
+      <label for="slide4" id="btn4" class="switch__item"><span></span></label>
+      <label for="slide5" id="btn5" class="switch__item"><span></span></label>
+    </div>
+  </main>
+  <footer>© 2022 Mariia Ushakova for RSS School</footer>
+</body>
+
+</html>
